@@ -58,7 +58,7 @@ export default function (req) {
             top: 0,
         }}/>
 
-        <img src={getPlayerObject(p2)} style={{
+        <img src={getPlayerImage(p2)} style={{
             width: 200,
             position: 'absolute',
             right: 20,
