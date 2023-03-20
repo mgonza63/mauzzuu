@@ -26,18 +26,12 @@ export default function (req) {
     const p2 = searchParams.get('p2');
     const p3 = searchParams.get('p3');
 
-    function getPlayerImage(playerName) {
-        return players.filter(player => player.name == playerName)
-    }
-
     const getPlayerObject = (playerName) => {
         const playerObject = players.filter(player => player.name == playerName)
         const playerImage = playerObject[0].image
         
         return playerImage
-    }
-    const chosenPlayer = getPlayerImage(p1)
-    
+    }    
     console.log(getPlayerObject(p1))
 
     let answer;

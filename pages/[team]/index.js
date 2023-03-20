@@ -1,0 +1,21 @@
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+
+export default function TeamPage() {
+    const router = useRouter()
+    const { p1, p2 } = router.query
+
+    return (
+        <div>
+            <Head>
+                <title>{p1}</title>
+                <meta property="og:title" content={p2} key="title" />
+                <meta property="og:image" content={`https://mauzzuu.vercel.app//api/nba01?p1=${p1}&p2=${p2}`} />
+
+            </Head>
+            {p1}
+            {p2}
+        </div>
+        
+    )
+}
