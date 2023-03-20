@@ -1,10 +1,14 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import {useEffect} from 'react'
+
 
 export default function TeamPage() {
     const router = useRouter()
     const { p1, p2 } = router.query
-
+    useEffect(() => {
+        window.location.assign('https://jebbit.com/')
+    })
     return (
         <div>
             <Head>
