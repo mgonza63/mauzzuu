@@ -7,15 +7,15 @@ export const config = {
 export default function (req) {
     let players = [
         {
-        "name": "Kevin Durant",
+        "name": "kevin_durant",
         "image": "https://s3.amazonaws.com/jebbit-assets/images/SbfD0c0x/business-images/6gAYFajLRNqLz0Z4Y8NT_2SMReflKSW657VS2cLyg_Kevin_Durant_2_1.png"
         },
         {
-        "name": "Jayson Tatum",
+        "name": "jayson_tatum",
         "image": "https://s3.amazonaws.com/jebbit-assets/images/SbfD0c0x/business-images/Ehb9aTsQQexYLlH0grbQ_7gOBzfAZQ0aacFQrx5gS_Jayson_Tatum.png"
         },
         {
-        "name": "Luka Doncic",
+        "name": "luka_doncic",
         "image": "https://s3.amazonaws.com/jebbit-assets/images/SbfD0c0x/business-images/KycGcJFOQFaz8yilfhEy_VM6TlRfRNu30iYbhD2hb_Luka_Doncic.png"
         }
 

@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import {useEffect} from 'react'
 
 export async function getServerSideProps({req, query}) {
     // console.log(query)
