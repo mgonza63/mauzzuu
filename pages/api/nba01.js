@@ -26,15 +26,14 @@ export default function (req) {
     const p2 = searchParams.get('p2');
     const p3 = searchParams.get('p3');
 
-    const getPlayerObject = (playerName) => {
+    const getPlayerImage = (playerName) => {
         const playerObject = players.filter(player => player.name == playerName)
         const playerImage = playerObject[0].image
         
         return playerImage
     }    
-    console.log(getPlayerObject(p1))
+    console.log(getPlayerImage(p1))
 
-    let answer;
   return new ImageResponse(
     (
       <div
@@ -52,7 +51,7 @@ export default function (req) {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <img src={getPlayerObject(p1)} style={{
+        <img src={getPlayerImage(p1)} style={{
             width: 300,
             position: 'absolute',
             left: 0,
