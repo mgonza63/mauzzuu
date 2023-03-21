@@ -52,17 +52,17 @@ export default function (req) {
         }}
       >
         <img src={getPlayerImage(p1)} style={{
-            width: 300,
+            width: 400,
             position: 'absolute',
             left: 0,
-            top: 0,
+            top: 150,
         }}/>
 
         <img src={getPlayerImage(p2)} style={{
             width: 200,
             position: 'absolute',
-            right: 20,
-            bottom: 20,
+            right: 50,
+            bottom: 150,
         }}/>
         NBA
       </div>
